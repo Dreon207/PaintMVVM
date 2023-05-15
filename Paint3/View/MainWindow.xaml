@@ -1,0 +1,38 @@
+﻿<Window x:Class="Paint3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paint3"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="460" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button Content="Очистить" Command="{Binding AddCommand}"  HorizontalAlignment="Left" Height="55" VerticalAlignment="Center" Width="204" FontSize="20" Grid.Row="5" Grid.ColumnSpan="3" Margin="50,0,0,0"/>
+        <Button  Content="Сохранить" Command="{Binding AddCommand2}" HorizontalAlignment="Left" Height="55" VerticalAlignment="Center" Width="204" FontSize="20" Grid.Row="4" Grid.ColumnSpan="3" Margin="46,0,0,0"/>
+        <Button Content="Ластик" HorizontalAlignment="Left" Height="55" Margin="50,0,0,0" VerticalAlignment="Center" Width="204" Command="{Binding AddCommandR1}" FontSize="20" Grid.ColumnSpan="3"/>
+        <Button Content="Ручка" HorizontalAlignment="Left" Height="55" VerticalAlignment="Center" Width="204" Command="{Binding AddCommandR2}" FontSize="20" Grid.Row="1" Grid.ColumnSpan="3" Margin="46,0,0,0"/>
+        <Button Content="Выделение" HorizontalAlignment="Left" Height="55" Margin="50,0,0,0" VerticalAlignment="Center" Width="204" Command="{Binding AddCommandR3}" FontSize="20" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="18,9,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Red" Command="{Binding AddCommandRED}" Grid.Row="3"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="55,9,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Blue" Command="{Binding AddCommandBlue}" Grid.Row="3" Grid.Column="2"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="18,42,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Black" Command="{Binding AddCommandBlack}" Grid.Row="3" RenderTransformOrigin="0.405,0.455"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="58,9,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Yellow" Command="{Binding AddCommandYellou}" Grid.Row="3"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="18,9,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Green" Command="{Binding AddCommandGreen}" Grid.Row="3" Grid.Column="2"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="58,42,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Pink" Command="{Binding AddCommandPink}" Grid.Row="3"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="18,42,0,0" VerticalAlignment="Top" Width="32"  FontSize="20" Background="Gray" Command="{Binding AddCommandGray}" Grid.Row="3" Grid.Column="2"/>
+    </Grid>
+</Window>
